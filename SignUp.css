@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Under Hiport';
-    src: url(fonts/UnderHiport-nRqpM.ttf);
+    src: url(/fonts/UnderHiport-nRqpM.ttf) format("opentype");
 }
 
 :root {
@@ -8,6 +8,11 @@
 }
 
 body {
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-repeat: no-repeat;
+    display: block;
+    background-attachment: fixed;
+    background-size: cover;
     background-color: #3a165c;
     color: rgb(27, 142, 243);
     margin: 0;
@@ -16,6 +21,11 @@ body {
 }
 
 h1 {
+
+    background-color: rgb(240, 255, 32);
+    padding: 30px;
+    border: solid;
+    border-radius: 5px;
     font-family: 'Under Hiport';
     filter: drop-shadow(2px 2px 1px #00ff7f);
     color: #ac04f4;
@@ -25,6 +35,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 7%;
     font-family: 'Under Hiport';
     text-align: center;
     filter:drop-shadow(2px 2px 2px #00ff7f);
@@ -43,6 +54,7 @@ a:hover {
 
 .left,
 .right {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,8 +62,6 @@ a:hover {
 }
 
 .left {
-    height: 250px;
-
     background-size: cover;
 }
 
@@ -138,4 +148,16 @@ form input[type="password"] {
 .signup-btn:hover {
     background: #4f6ec2;
     cursor: pointer;
+}
+.border{
+    background-color: aliceblue;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: solid #4f6ec2;
+    border-radius: 10px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
