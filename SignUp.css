@@ -8,12 +8,12 @@
 }
 
 body {
-    background-image: "../images/wallpaper1.jpg";
+    background-image:url ("images/wallpaper1.jpg");
     background-repeat: no-repeat;
     display: block;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #3a165c;
+ /**   background-color: #3a165c;**/
     color: rgb(27, 142, 243);
     margin: 0;
     font: 500 "Montserrat", sans-serif;
