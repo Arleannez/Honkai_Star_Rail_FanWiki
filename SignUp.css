@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Under Hiport';
-    src: url(/fonts/UnderHiport-lgD3X.otf);
+    src: url(/fonts/UnderHiport-lgD3X.otf) format ("opentype");
 }
 
 :root {
