@@ -1,6 +1,6 @@
 @font-face {
   font-family:'Under Hiport';
-  src: url(../fonts/UnderHiport-nRqpM.ttf);
+  src: url(fonts/UnderHiport-nRqpM.ttf);
 }
 body {
   flex-wrap: nowrap;
