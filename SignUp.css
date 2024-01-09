@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Under Hiport';
+    src: url(/fonts/UnderHiport-nRqpM.ttf);
+}
+
+:root {
+    --primary-blue: #295ff5;
+}
+
+body {
+    background-color: #3a165c;
+    color: rgb(27, 142, 243);
+    margin: 0;
+    font: 500 "Montserrat", sans-serif;
+   
+}
+
+h1 {
+    font-family: 'Under Hiport';
+    filter: drop-shadow(2px 2px 1px #00ff7f);
+    color: #ac04f4;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Under Hiport';
+    text-align: center;
+    filter:drop-shadow(2px 2px 2px #00ff7f);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left {
+    height: 250px;
+
+    background-size: cover;
+}
+
+.left p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.right .copy {
+    color: #ac04f4;
+    text-align: center;
+    
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
+}
+
+.checkbox-container {
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.2rem 0;
+}
+
+.checkbox-container input:checked~.checkmark {
+    background-color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+}
+
+.checkmark {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: -4px;
+    left: 0;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked .checkmark:after {
+    display: block;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    transform: rotate(45deg);
+}
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signup-btn:hover {
+    background: #4f6ec2;
+    cursor: pointer;
+}

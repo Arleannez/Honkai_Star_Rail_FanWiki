@@ -1,0 +1,246 @@
+@font-face {
+  font-family:'Under Hiport';
+  src: url(/fonts/UnderHiport-nRqpM.ttf);
+}
+body {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(images/1341152.jpeg);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  border-style: solid;
+  border-radius: 2%;
+  border-color: #8a2be2;
+  display: flex;
+  text-align: center;
+  background-color: #320565;
+  border-radius: 7px;
+  font-family: 'Under Hiport';
+  position: sticky;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+ul {
+  text-align: center;
+
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #ac04f4;
+  font-size: 25px;
+  display: inline-block;
+  padding: 15px 51px;
+  position: relative;
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2%;
+  background-color: chartreuse;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+ul li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: chartreuse;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+ul li a:hover {
+  color: chartreuse;
+}
+ul li a:hover:before,
+ul li a:hover:after {
+  transform: scaleX(1);
+}
+
+div{
+  border-style: solid;
+  border-radius: 2%;
+  border-color: #ac04f4;
+  background-color: #ffd700;
+  padding: 5px;
+  margin: 10px;
+  left: 30%;
+  border-radius: 10px;
+  position: absolute;
+
+}
+
+div h1 {
+  font-family: 'Under hiport';
+  color: #731a3b;
+  text-align: center;
+}
+div h1:hover {
+  filter: drop-shadow(2px 2px 1px #00ff7f);
+  transition: 0.3s;
+  color: #8a2be2;
+}
+div h1:hover:before,
+div h1:hover:after {
+  transform: scaleX(1);
+}
+
+div p {
+    margin-right: 50px;
+    margin-left: 50px;
+  color: #731a3b;
+  font-family: 'sans-serif';
+  text-align: justify;
+}
+#kafkaLink{
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+color: #731a3b;
+font-family: "Gotham";
+font-style: italic;
+}
+footer {
+  font-family: "Under Hiport";
+  font-size: 12px;
+  text-align: center;
+  color: #731a3b;
+}
+
+#myBtn {
+  position:absolute;
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+  color: #550b0b;
+  cursor: pointer;
+  font-family: "Under Hiport";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 2;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+#myBtn:hover {
+  background-color: #ba3d3d;
+}
+#myBtn {
+  transition: all 0.5s ease 0s;
+}
+#down {
+
+  position:absolute;
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  z-index: 99;
+  top: 20px;
+  right: 20px;
+  color: #550b0b;
+  cursor: pointer;
+  font-family: "Under Hiport";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+#down:hover {
+  
+  background-color: #ba3d3d;
+}
+#down {
+  transition: all 0.5s ease 0s;
+}
+
+
+video {
+  background-color: #02061b;
+  border: solid;
+  border-color: #5a12ac;
+  border-radius: 10px;
+  padding: 1%;
+  width: 720px;
+  height: 480px;
+margin: auto;
+  display: block;
+}
+section {
+  top: auto;
+  bottom: auto;
+  padding: 10px;
+  margin: auto;
+}
+article{
+  border-style: solid;
+  border-radius: 2%;
+  padding: 1%;
+  border-color: #5e5df0;
+  background-color: #f0eee2;
+  right: 50%;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 20%;
+  border-radius: 10px;
+  position: absolute;
+}
+article h1{
+  border-style: solid;
+  border-radius: 2%;
+  padding: 1%;
+  font-family: "Under hiport";
+  color: #731a3b;
+  text-align: center;
+  background-color: #ffd700;
+  padding: 4%;
+  border-radius: 10px;
+}
+article p{
+  
+  margin-right: 50px;
+  margin-left: 50px;
+color: #731a3b;
+font-family:'san-serif';
+
+text-align: justify;
+}

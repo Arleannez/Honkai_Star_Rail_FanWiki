@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignIn.css" />
+    <title>Log In</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Log In</h1>
+    </div> 
+
+    <div class="login-form">
+        <form id="loginForm">
+            <div class="input-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="input-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+           
+        </form>
+        <a href="index.html">
+            <button class="submit-btn" type="submit">Log In</button></a>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            var email = document.getElementById('email').value.trim();
+            var password = document.getElementById('password').value.trim();
+
+            if (email === '' || password === '') {
+                alert('Please fill in both email and password fields.');
+                event.preventDefault(); 
+            } 
+        });
+    </script>
+</body>
+</html>
