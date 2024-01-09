@@ -1,28 +1,33 @@
-
+@font-face {
+    font-family: 'Under Hiport';
+    src: url(fonts/UnderHiport-nRqpM.ttf);
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    font-family: 'Under Hiport';
+    padding: 2%;
+    background-color: #3a165c;
+    background-image: url(images/1341152.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.header {
+
+h1{
     text-align: center;
-    color: #333;
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #ccc;
+    color: #d4238b;
+    filter: drop-shadow(2px 2px 1px rgb(53, 23, 185));
 }
-
 .login-form {
     width: 80%;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: solid;
+    border-color: rgb(99, 110, 255);
+    background-color: #ffd700;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .input-field {
@@ -32,7 +37,8 @@ body {
 .input-field label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #d4238b;
+   
     font-weight: bold;
 }
 
@@ -46,7 +52,7 @@ body {
 .submit-btn {
     width: 100%;
     padding: 10px;
-    background-color: #333;
+    background-color: #ac2ea5;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -56,4 +62,19 @@ body {
 
 .submit-btn:hover {
     background-color: #555;
+}
+.March{
+    border: solid #ffd700;
+    border-radius: 5px;
+    margin-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kafka{
+    width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
